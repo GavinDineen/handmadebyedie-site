@@ -516,37 +516,8 @@
     object-position: center;
     transition: transform 0.5s var(--ease);
   }
-  .tile-label {
-    position: absolute;
-    inset: auto 0 0 0;
-    padding: 2.25rem 1rem 0.9rem;
-    background: linear-gradient(to top,
-      rgba(28, 39, 52, 0.92) 0%,
-      rgba(28, 39, 52, 0.55) 45%,
-      transparent 100%);
-    color: #fff;
-    font-size: var(--fs-200);
-    font-weight: 500;
-    letter-spacing: 0.01em;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-    transform: translateY(0);
-    transition: transform 0.4s var(--ease);
-  }
   .tile:hover img { transform: scale(1.06); }
-  .tile:hover .tile-label { transform: translateY(-2px); }
-
-  .gallery-cta { text-align: center; margin-top: clamp(2rem, 5vw, 3rem); }
-  .gallery-cta p { color: var(--ink); margin-bottom: var(--space-md); }
-
-  /* ============================================================
-     EXPLORE CARDS
-     ============================================================ */
-  .explore-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-md);
-  }
-  @media (min-width: 780px) { .explore-grid { grid-template-columns: repeat(3, 1fr); } }
+  .tile:hover  @media (min-width: 780px) { .explore-grid { grid-template-columns: repeat(3, 1fr); } }
 
   .explore-card {
     display: flex;
@@ -865,15 +836,12 @@
         <div class="gallery gallery--teaser">
           <figure class="tile">
             <img src="images/totes-bow-handle.jpg" alt="Two slouchy handmade tote bags hanging on wall hooks, one with a navy polka-dot fabric bow and floral-print body, the other with a red polka-dot bow and strawberry-print body" width="640" height="626" loading="lazy" decoding="async">
-            <figcaption class="tile-label">Reversible bow-handle totes</figcaption>
           </figure>
           <figure class="tile">
             <img src="images/wedding-cake-tiered.jpg" alt="Three-tier round white wedding cake decorated with piped buttercream flowers, on a linen-draped table" width="567" height="640" loading="lazy" decoding="async">
-            <figcaption class="tile-label">Tiered wedding cake</figcaption>
           </figure>
           <figure class="tile">
             <img src="images/knits-monogrammed.jpg" alt="Two blue knit sweaters laid on grass, each hand-embroidered with a large single initial" width="537" height="640" loading="lazy" decoding="async">
-            <figcaption class="tile-label">Monogrammed knits</figcaption>
           </figure>
         </div>
         <div class="gallery-cta">
@@ -931,47 +899,36 @@
         <div class="gallery">
           <figure class="tile">
             <img src="images/totes-bow-handle.jpg" alt="Two slouchy handmade tote bags hanging on wall hooks, one with a navy polka-dot fabric bow and floral-print body, the other with a red polka-dot bow and strawberry-print body" width="640" height="626" loading="lazy" decoding="async">
-            <figcaption class="tile-label">Reversible bow-handle totes</figcaption>
           </figure>
           <figure class="tile">
             <img src="images/cookies-fruit-shaped.jpg" alt="Pastel decorated sugar cookies shaped like strawberries, pears, cherries, lemons and grapes, arranged on a round wooden board" width="640" height="631" loading="lazy" decoding="async">
-            <figcaption class="tile-label">Fruit-shaped sugar cookies</figcaption>
           </figure>
           <figure class="tile">
             <img src="images/cookies-baby-shower.jpg" alt="Decorated sugar cookies in soft green and white — teddy-bear faces, balloon bunches and piped florals — on a clear glass platter" width="640" height="588" loading="lazy" decoding="async">
-            <figcaption class="tile-label">Baby shower cookies</figcaption>
           </figure>
           <figure class="tile">
             <img src="images/wedding-cake-tiered.jpg" alt="Three-tier round white wedding cake decorated with piped buttercream flowers, on a linen-draped table" width="567" height="640" loading="lazy" decoding="async">
-            <figcaption class="tile-label">Tiered wedding cake</figcaption>
           </figure>
           <figure class="tile">
             <img src="images/cupcakes-hydrangea.jpg" alt="Cupcakes piped with ruffled buttercream to resemble blue, green and white hydrangea blooms" width="519" height="640" loading="lazy" decoding="async">
-            <figcaption class="tile-label">Hydrangea cupcakes</figcaption>
           </figure>
           <figure class="tile">
             <img src="images/cake-chocolate-almond.jpg" alt="Two-layer chocolate cake with piped cream rosettes and toasted almond topping on a glass cake stand, next to a dark floral arrangement" width="518" height="640" loading="lazy" decoding="async">
-            <figcaption class="tile-label">Chocolate almond layer cake</figcaption>
           </figure>
           <figure class="tile">
             <img src="images/knits-monogrammed.jpg" alt="Two blue knit sweaters laid on grass, each hand-embroidered with a large single initial" width="537" height="640" loading="lazy" decoding="async">
-            <figcaption class="tile-label">Monogrammed knit sweaters</figcaption>
           </figure>
           <figure class="tile">
             <img src="images/cookies-poinsettia.jpg" alt="Flower-shaped sugar cookies iced with white and deep-green buttercream petals and gold sugar pearls, on a baking tray" width="480" height="640" loading="lazy" decoding="async">
-            <figcaption class="tile-label">Poinsettia sugar cookies</figcaption>
           </figure>
           <figure class="tile">
             <img src="images/cookies-chocolate-chip.jpg" alt="Chocolate chip cookies sprinkled with flaky sea salt, cooling on parchment paper" width="480" height="640" loading="lazy" decoding="async">
-            <figcaption class="tile-label">Sea salt chocolate chip cookies</figcaption>
           </figure>
           <figure class="tile">
             <img src="images/cookies-patriotic-star.jpg" alt="Red, white and blue star-shaped decorated sugar cookies on a cut-glass plate outdoors" width="480" height="640" loading="lazy" decoding="async">
-            <figcaption class="tile-label">Patriotic star cookies</figcaption>
           </figure>
           <figure class="tile">
             <img src="images/cake-bow-detail.jpg" alt="Small white buttercream cake with piped shell borders and pale-pink fondant bows, on a white pedestal stand" width="480" height="640" loading="lazy" decoding="async">
-            <figcaption class="tile-label">Bow-detail celebration cake</figcaption>
           </figure>
           <figure class="tile">
             <img src="images/cookies-first-birthday-bows.jpg" alt="Pale-pink and white decorated sugar cookies on a baking sheet: glittered number-one shapes, bow shapes, and round cookies piped with small bows" width="750" height="1000" loading="lazy" decoding="async">
